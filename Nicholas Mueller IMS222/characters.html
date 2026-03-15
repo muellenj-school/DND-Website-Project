@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>DND Homebrew Character Creation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Dungeons and Dragons Skill Builders</h1>
+<p>Homebrew Character Creation Guide</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a> 
+<a href="campaign.html">Campaigns</a>
+<a href="characters.html">Characters</a>
+</nav>
+<img class="roundimage" src="https://upload.wikimedia.org/wikipedia/en/a/a1/Dungeons_%26_Dragons_Miniatures_2.jpg" alt="Characters">
+<section>
+<script>
+
+function generateCharacter(){
+
+let races = ["Elf","Dwarf","Human","Dragonborn","Tiefling"];
+let classes = ["Wizard","Rogue","Ranger","Cleric","Fighter"];
+
+let race = races[Math.floor(Math.random()*races.length)];
+let role = classes[Math.floor(Math.random()*classes.length)];
+
+document.getElementById("characterResult").innerHTML =
+"Your character: " + race + " " + role;
+
+}
+
+</script>
+<h2>Random Character Idea Generator</h2>
+
+<button onclick="generateCharacter()">Generate Character</button>
+
+<p id="characterResult"></p>
+
+</section>
+<section>
+
+<h2>Creating Homebrew Characters</h2>
+
+<p>
+Creating characters is one of the most exciting parts of homebrewing in Dungeons and Dragons. Players and Dungeon Masters can design unique heroes, villains, and entire races that expand the world of the campaign. A homebrew character often starts with a simple idea such as a personality, a special power, or a unique background. From there, you can develop their race, class, abilities, and goals within the story. The key to making a great character is balancing creativity with the mechanics of the game. Characters should feel interesting and powerful without breaking the rules that keep the game fair for everyone. Good homebrew characters also help move the story forward and interact with the world around them. Whether your world is official, borrowed, or completely new, character design is an important part of building your campaign.
+</p>
+
+</section>
+
+<section>
+
+<h2>Characters in the Official D&D Worlds</h2>
+
+<p>
+Many homebrew characters are created inside the official worlds of Dungeons and Dragons such as <b>Forgotten Realms</b> or other classic settings. When creating characters in these worlds, it is helpful to follow the general lore and tone that already exists. For example, elves may still live in forests, dwarves may still value craftsmanship, and magic may follow traditional fantasy rules. However, players can still customize their characters with unique backgrounds, personalities, and motivations. A character might be a wandering wizard searching for lost magic or a rogue trying to redeem their past mistakes. Staying within the established lore helps the character feel believable inside the world. At the same time, creative twists can make the character memorable and fun to roleplay.
+</p>
+
+<ul>
+<li>Use existing races like <b>elves, dwarves, humans, and dragonborn</b></li>
+<li>Create unique backgrounds and personal goals</li>
+<li>Follow the general lore of the D&D setting</li>
+<li>Add small creative twists to make the character original</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Characters in Pre-Existing Worlds (Other IPs)</h2>
+
+<p>
+Another popular type of homebrew involves building characters inside worlds that already exist in other stories. These settings could come from books, movies, or games such as <i>Lord of the Rings</i>, science-fiction universes, or cyberpunk worlds. When adapting characters to these settings, it is important to understand the tone and rules of that universe. Magic systems, technology levels, and cultures may work very differently compared to traditional D&D. A character created for a cyberpunk world might rely more on technology and hacking rather than spells and swords. Meanwhile, a fantasy world based on another story may have different races or political factions. Adapting characters to fit these settings helps the campaign feel immersive and consistent with the world it is inspired by.
+</p>
+
+<ul>
+<li>Study the rules and lore of the original world</li>
+<li>Adapt D&D classes to match the setting</li>
+<li>Consider technology, magic, and culture differences</li>
+<li>Create characters that fit the story's tone</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Characters in Completely Original Worlds</h2>
+
+<p>
+The most creative form of homebrewing is designing characters for a world that you build entirely from scratch. In this type of campaign, the Dungeon Master creates the races, cultures, geography, and history of the setting. This allows for unlimited creativity when designing characters. Perhaps the world is filled with intelligent animals, alien civilizations, or magical kingdoms never seen before. Players can invent new races, abilities, and backstories that would not normally exist in traditional D&D. However, it is still important to keep the gameplay balanced so that no character becomes too powerful. Clear rules and consistent worldbuilding help maintain fairness while still encouraging imagination. Completely original worlds often lead to the most memorable and unique campaigns.
+</p>
+
+<ul>
+<li>Invent entirely new races or species</li>
+<li>Create original cultures and societies</li>
+<li>Design new abilities or magical systems</li>
+<li>Balance creativity with fair gameplay</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Example Character Creation Table</h2>
+
+<table border="1">
+
+<tr>
+<th>World Type</th>
+<th>Character Example</th>
+<th>Main Trait</th>
+</tr>
+
+<tr>
+<td>D&D Official World</td>
+<td>Elf Ranger</td>
+<td>Forest survival and archery</td>
+</tr>
+
+<tr>
+<td>Existing IP World</td>
+<td>Cyberpunk Hacker</td>
+<td>Technology and digital combat</td>
+</tr>
+
+<tr>
+<td>Original World</td>
+<td>Crystal Dragon Knight</td>
+<td>Magical crystal powers</td>
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+<p><b>Homebrew Tip:</b> The best characters come from strong ideas, balanced abilities, and a clear role in the story.</p>
+
+<p>
+<a href="index.html">Return to Home Page</a>
+</p>
+<p><b>Contact Information</b></p>
+
+<p>
+Location: Loveland, Ohio<br>
+Phone: (555) 123-4567<br>
+Email: dndskillbuilders@email.com
+</p>
+
+<p>
+<b>| <a href="https://www.dndbeyond.com">D&D Beyond</a> | Useful tool for characters and campaigns</b>
+</p>
+</footer>
+
+</body>
+</html>
