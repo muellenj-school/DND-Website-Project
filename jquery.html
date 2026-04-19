@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>D&D jQuery Interactions</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Dungeons and Dragons Skill Builders</h1>
+<p>jQuery Interaction Page</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="campaign.html">Campaigns</a>
+<a href="characters.html">Characters</a>
+<a href="materialize.html">Tools</a>
+<a href="jquery.html">JQuery</a>
+</nav>
+
+<img class="roundimage" src="https://www.enworld.org/media/dnd-logo-png.97731/full" alt="DND LOGO">
+
+<!-- INTERACTION 1: FADE -->
+<section>
+
+<h2>Fade In Lore</h2>
+
+<p id="loreText" style="display:none;">
+In ancient times, dragons ruled the skies and shaped the world with fire and magic...
+</p>
+
+<button id="fadeBtn">Reveal Lore</button>
+
+</section>
+
+<!-- INTERACTION 2: TOGGLE -->
+<section>
+
+<h2>Toggle Dungeon Tips</h2>
+
+<button id="toggleBtn">Show/Hide Tips</button>
+
+<ul id="tips" style="display:none;">
+<li>Always check for traps</li>
+<li>Work with your party</li>
+<li>Manage your resources wisely</li>
+<li>Never underestimate a goblin</li>
+</ul>
+
+</section>
+
+<!-- INTERACTION 3: DICE ROLLER (jQuery version) -->
+<section>
+
+<h2>jQuery Dice Roller</h2>
+
+<button id="rollBtn">Roll D20</button>
+
+<p id="rollResult"></p>
+
+</section>
+
+<!-- INTERACTION 4: HOVER EFFECT -->
+<section>
+
+<h2>Hover Over Magic Item</h2>
+
+<p id="magicItem">
+Sword of Flames
+</p>
+
+</section>
+
+<footer>
+
+<p><b>Contact Information</b></p>
+
+<p>
+Location: Loveland, Ohio<br>
+Phone: (555) 123-4567<br>
+Email: dndskillbuilders@email.com
+</p>
+
+<p>
+<b>| <a href="https://www.dndbeyond.com">D&D Beyond</a> | Useful tool for characters and campaigns</b>
+</p>
+
+</footer>
+
+<!-- JQUERY SCRIPT -->
+<script>
+
+$(document).ready(function(){
+
+    // Fade interaction
+    $("#fadeBtn").click(function(){
+        $("#loreText").fadeIn();
+    });
+
+    // Toggle interaction
+    $("#toggleBtn").click(function(){
+        $("#tips").slideToggle();
+    });
+
+    // Dice roller
+    $("#rollBtn").click(function(){
+        let roll = Math.floor(Math.random() * 20) + 1;
+        $("#rollResult").text("You rolled: " + roll);
+    });
+
+    // Hover effect
+    $("#magicItem").hover(
+        function(){
+            $(this).css("color", "red");
+            $(this).text("Sword of Flames (Burns enemies on hit!)");
+        },
+        function(){
+            $(this).css("color", "black");
+            $(this).text("Sword of Flames");
+        }
+    );
+
+});
+
+</script>
+
+</body>
+</html>
