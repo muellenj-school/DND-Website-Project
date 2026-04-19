@@ -4,6 +4,8 @@
 <head>
 <title>Dungeons and Dragons Skill Builders</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
 </head>
 
 <body>
@@ -29,8 +31,7 @@ document.getElementById("diceResult").innerHTML = "You rolled: " + roll;
 </script>
 <h2>Roll a D20 For Fun</h2>
 
-<button onclick="rollDice()">Roll Dice</button>
-
+<button onclick="rollDice()" class="btn">Roll Dice</button>
 <p id="diceResult"></p>
 
 </section>
@@ -38,19 +39,49 @@ document.getElementById("diceResult").innerHTML = "You rolled: " + roll;
 
 <h1>How to Homebrew</h1>
 
-<h2>
-Lets quickly go over how homebrewing actually works. Homebrewing is taking the original features and mechanics and making them <i>your own.</i>
-</h2>
+<h2>What is Homebrewing?</h2>
 
-<h3>
-One of the most common types of homebrew content includes <u>spells, objects, and actions.</u> These elements require careful design and thoughtful balancing to ensure they enhance gameplay without disrupting it. Because they directly affect mechanics, even small changes can have a significant impact on how the game feels and functions. In addition to these smaller additions, another popular form of homebrew is the creation of full-blown campaigns. This involves building a story from the ground up, including original enemies, locations, and characters that bring a unique world to life.
+<p>
+Homebrewing is taking the original features and mechanics of Dungeons & Dragons and making them <i>your own.</i>
+</p>
 
-Some creators take things even further by rebuilding the game itself, designing entirely new systems and effectively creating a brand-new tabletop role-playing game. When crafting a custom campaign, it is important to focus on strong worldbuilding, engaging characters, balanced encounters, and a compelling central conflict. Clear themes, meaningful player choices, and thoughtful pacing also help create an immersive and memorable experience for everyone at the table.
-</h3>
+<h2>Common Types of Homebrew</h2>
 
-<h4>
-Many kinds of homebrew worlds that people create are based on other intellectual properties and creative works. Some of the most common themes for these settings include sci-fi worlds like cyberpunk, fantasy worlds similar to Lord of the Rings, modern-day settings, or even ancient historical eras. These inspirations help players imagine unique environments for their adventures. Almost any idea that you have for a setting you can make into a world for your homebrewed DND. Some people even change the world they make by changing the races. Maybe they are all animals, aliens, humans, elves, or any other kind of creation you want.
-</h4>
+<p>
+One of the most common types of homebrew content includes <u>spells, objects, and actions.</u> These require careful design and balancing to improve gameplay without breaking it. Even small changes can have a big impact.
+</p>
+
+<p>
+Another popular form is creating full campaigns. This includes building original enemies, locations, and characters to create a unique world.
+</p>
+
+<h2>Advanced Homebrew</h2>
+
+<p>
+Some creators go further by designing entirely new systems, essentially creating a brand-new tabletop game.
+</p>
+
+<p>
+When building a campaign, focus on:
+</p>
+
+<ul>
+<li>Strong worldbuilding</li>
+<li>Engaging characters</li>
+<li>Balanced encounters</li>
+<li>A compelling main conflict</li>
+<li>Meaningful player choices</li>
+</ul>
+
+<h2>Inspiration</h2>
+
+<p>
+Many homebrew worlds are inspired by existing ideas like sci-fi (cyberpunk), fantasy (like Lord of the Rings), modern settings, or historical eras.
+</p>
+
+<p>
+You can create almost any world you imagine by changing races, settings, or even the rules of the game itself.
+</p>
 
 </section>
 
@@ -126,6 +157,12 @@ Email: dndskillbuilders@email.com
 </p>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    M.AutoInit();
+});
+</script>
 </body>
 </html>

@@ -6,14 +6,25 @@ body{
     color:white;
 }
 
-/* Header */
 header{
     background-color:white;
     color:black;
     text-align:center;
     padding:20px;
-    font-size:28px;
+}
+
+/* Main title */
+header h1{
+    margin:0;
+    font-size:32px;
     font-weight:bold;
+}
+
+/* Subtitle */
+header p{
+    margin:5px 0 0 0;
+    font-size:18px;
+    color:#8b0000; /* matches your site theme */
 }
 
 /* Navigation bar */
@@ -118,4 +129,14 @@ footer{
 
 footer a{
     color:gold;
+}
+
+.collapsible {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+}
+
+.collapsible-wrapper {
+    text-align: center;
 }

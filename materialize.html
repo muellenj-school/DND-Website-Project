@@ -4,6 +4,9 @@
 <head>
     <title>D&D Homebrew Hub</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +23,12 @@
     <a href="materialize.html">Tools</a>
 </nav>
 
-<img class="roundimage" src="https://upload.wikimedia.org/wikipedia/en/a/a1/Dungeons_%26_Dragons_Miniatures_2.jpg" alt="DND Characters">
+<!-- Materialize Carousel -->
+<div class="carousel">
+    <a class="carousel-item"><img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Dungeons_%26_Dragons_Miniatures_2.jpg"></a>
+    <a class="carousel-item"><img src="https://www.enworld.org/media/dnd-logo-png.97731/full"></a>
+    <a class="carousel-item"><img src="https://writersanontaunton.wordpress.com/wp-content/uploads/2014/05/cyberpunk_city.jpg"></a>
+</div>
 
 <section>
 
@@ -48,6 +56,25 @@ impact during gameplay.
 </ul>
 
 </section>
+
+<!-- Materialize Collapsible -->
+ <div class="collapsible-wrapper">
+<ul class="collapsible">
+    <li>
+        <div class="collapsible-header">Quick View: Balance Mistakes</div>
+        <div class="collapsible-body">
+            <span>Too many effects, too much damage, ignoring action economy, no limits.</span>
+        </div>
+    </li>
+
+    <li>
+        <div class="collapsible-header">Quick View: Playtesting</div>
+        <div class="collapsible-body">
+            <span>Test often, compare with official content, and adjust slowly.</span>
+        </div>
+    </li>
+</ul>
+</div>
 
 <section>
 
@@ -125,7 +152,7 @@ function balanceTip(){
 
 <h2>Quick Balance Tip</h2>
 
-<button onclick="balanceTip()">Get Tip</button>
+<button onclick="balanceTip()" class="btn">Get Tip</button>
 
 <p id="tipResult"></p>
 
@@ -148,6 +175,20 @@ Email: homebrewhub@email.com
 </p>
 
 </footer>
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Initialization -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var carousels = document.querySelectorAll('.carousel');
+    M.Carousel.init(carousels);
+
+    var collapsibles = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsibles);
+});
+</script>
 
 </body>
 </html>
